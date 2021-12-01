@@ -6,7 +6,6 @@ import (
 
 // TestCalcPart1 is a test for the number of measurement increments
 func TestCalcPart1(t *testing.T) {
-	// Arrange
 	type test struct {
 		input []int
 		want  int
@@ -18,7 +17,6 @@ func TestCalcPart1(t *testing.T) {
 	}
 
 	for _, test := range tests {
-
 		expectedNumMeasurementIncrements := test.want
 		actualNumMeasurementIncrements := calcPart1(test.input)
 
@@ -30,7 +28,6 @@ func TestCalcPart1(t *testing.T) {
 
 // TestCalcPart2 is a test for the number of measurement increments in a sliding window
 func TestCalcPart2(t *testing.T) {
-	// Arrange
 	type test struct {
 		input []int
 		want  int
